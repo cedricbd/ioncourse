@@ -7,7 +7,5 @@
 </ion-header>
 
 <ion-content padding>
-  <button ion-button (click)='onLoadHeroes()'>
-  Liste des Héros
-  </button>
+  <button ion-button [navPush]="lienVersHeroesPage">Liste des Héros</button>
 </ion-content>
