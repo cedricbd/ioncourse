@@ -14,7 +14,11 @@
 
 
 <ion-content padding>
-
-  <p>Page de caractéristiques de {{ name }}</p>
+  <ion-car>
+    <ion-card-header>{{ hero.name }}</ion-card-header>
+    <ion-card-content>
+    <p *ngFor="let line of hero.description"></p>
+    </ion-card-content>
+  </ion-car>  
 
 </ion-content>
